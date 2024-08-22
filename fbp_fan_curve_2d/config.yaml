@@ -1,0 +1,10 @@
+geometry:
+    DecFanAng: 0.9643345
+    ScanR: 538.52
+    Radius: 154
+    Number: 984
+    YL: 835
+
+data:
+    input_path: './data/projection_curve.mat'
+    save_path: './data/recon_curve.mat'
