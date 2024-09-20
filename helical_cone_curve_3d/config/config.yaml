@@ -1,0 +1,31 @@
+---
+
+geometry:
+    SO: 10  # The distance from source to object (cm)
+    DD: 15  # The distance from detector to object center(cm)
+    YL: 350  # Detector cell number along the horizontal direction of detector array
+    ZL: 20  # Detector cell number along the vertical direction of detector array
+    DecAngle : 0.232  # Detector array beam angle along the horizontal direction (rad)
+    DecHeight : 0.2  # Detector array height along the vertical direction (cm)
+    N_Turn: 3  # The number of turns for the whole helical scan
+    N_2pi: 360  # The projections/views number for each turn of scan
+    h: 0.8  # Helical pitch related to detector height
+    dectorYoffset: 0
+    dectorZoffset: 0
+recon:
+    k1 : 5  # The order to define the 3D weighting function
+    delta: 60  # The range to define smoothness of 2D weigthing function
+    HSCoef: 0.6  # This is used to define the half-scan range
+    imageSize: 128  # Define the size of the reconstructed image in xoy
+    sliceCount: 64  # Define the size of the reconstructed image in z axis
+    sliceThickness: 1
+    ObjR: 1.1  # Diameter of imaginh object(fov)
+    kernelType: 'SL'
+    centerOffset: [0,0,0]
+
+data:
+    input_path: './data/projection/HelicalProjectionsturn.mat'
+    save_path: './data/reconstruction/helical_recon_curve.mat'
+
+dll:
+    dll_path: './dll/helicalrecon3d.dll' 
