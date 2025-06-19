@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import scipy
 from pyfiles.HelicalEquiAngular import HelicalEquiAngular
 
-
+## configration path
 yaml_path = './config/config.yaml'
 
 ## Reconstruction 
